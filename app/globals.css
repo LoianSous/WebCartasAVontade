@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
 
 :root {
   --background: #ffffff;
@@ -24,3 +26,34 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.template-wrapper {
+  width: 100%;
+}
+
+/* TOPO */
+.template-top {
+  background-image: url("/cartacorpo.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  height: 380px;
+}
+
+/* MEIO – repete perfeitamente */
+.template-middle {
+  background-image: url("/cartacorpomeio.svg");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: top center;
+}
+
+/* FINAL */
+.template-bottom {
+  background-image: url("/cartacorpofinal.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+  height: 380px;
+}
+

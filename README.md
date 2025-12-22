@@ -34,3 +34,40 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+app-web/
+├─ .next/
+├─ app/
+│  ├─ letters/
+│  │  └─ [id]/
+│  │     └─ page.tsx      ← Página dinâmica que renderiza o template
+│  ├─ lib/
+│  │  ├─ api.ts
+│  ├─ services/
+│  │  ├─ letters.ts
+│  ├─ templates/
+│  │  ├─ Template1.tsx
+│  │  ├─ Template2.tsx
+│  │  └─ Template3.tsx
+│  ├─ debug-env/
+│  ├─ supabase/
+│  │  └─ supabaseClient.ts
+│  ├─ favicon.ico
+│  ├─ globals.css
+│  ├─ layout.tsx          ← Não mexe
+│  └─ page.tsx            ← Página inicial do site (home)
+├─ node_modules/
+├─ public/
+├─ .env.local
+├─ .gitignore
+├─ eslint.config.mjs
+├─ next-env.d.ts
+├─ next.config.ts
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.mjs
+├─ README.md
+├─ tailwind.config.ts
+└─ tsconfig.json
+
