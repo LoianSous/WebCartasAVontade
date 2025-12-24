@@ -1,5 +1,6 @@
 import Template1 from "@/app/templates/Template1";
 import { getLetterByToken } from "@/app/services/letters";
+import Image from "next/image";
 
 export default async function Page({ params }: any) {
   const { id } = await params;
@@ -33,22 +34,96 @@ export default async function Page({ params }: any) {
   };
 
   return (
+
     <main className="min-h-screen bg-rose-100 relative overflow-hidden py-8 flex justify-center">
 
       {/* Corações no fundo */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-12 left-8 text-red-500 opacity-60 text-2xl">♥</div>
-        <div className="absolute top-32 right-12 text-red-600 opacity-50 text-lg">♥</div>
-        <div className="absolute top-48 left-1/4 text-red-400 opacity-60 text-xl">♥</div>
-        <div className="absolute top-64 right-1/3 text-red-500 opacity-50 text-2xl">♥</div>
-        <div className="absolute top-80 left-12 text-red-600 opacity-60 text-lg">♥</div>
-        <div className="absolute top-96 right-20 text-red-400 opacity-50 text-2xl">♥</div>
-        <div className="absolute bottom-64 left-1/3 text-red-500 opacity-60 text-xl">♥</div>
-        <div className="absolute bottom-48 right-1/4 text-red-600 opacity-50 text-2xl">♥</div>
-        <div className="absolute bottom-32 left-20 text-red-400 opacity-60 text-lg">♥</div>
-        <div className="absolute bottom-12 right-32 text-red-500 opacity-50 text-2xl">♥</div>
-        <div className="absolute top-1/2 right-8 text-red-600 opacity-60 text-xl">♥</div>
-        <div className="absolute top-1/3 right-1/2 text-red-400 opacity-50 text-lg">♥</div>
+        <div
+          className="
+            absolute
+            sm:mt-25
+            top-10
+            sm:-top-24
+            left-[75%]
+            z-20
+          "
+        >
+          <Image
+            src="/coracao2.png"
+            alt="coração"
+            width={90}
+            height={90}
+            className="opacity-70"
+          />
+        </div>
+         <div
+          className="
+            absolute
+            sm:mt-20
+            top-6
+            sm:-top-20
+            left-[65%]
+            z-20
+          "
+        >
+          <Image
+            src="/coracao2.png"
+            alt="coração"
+            width={100}
+            height={100}
+            className="opacity-80"
+          />
+        </div>
+        <div
+          className="
+            absolute
+            sm:mt-17
+            top-0
+            sm:-top-16
+            left-[58%]
+            -translate-x-1/2
+            z-20
+          "
+        >
+          <Image
+            src="/coracao1.png"
+            alt="coração"
+            width={120}
+            height={120}
+            className="opacity-90 drop-shadow-[0_0_18px_rgba(220,38,38,0.7)]"
+          />
+        </div>
+
+        <div className="absolute top-12 -left-20 opacity-60">
+          <Image src="/coracaofundo.png" alt="" width={240} height={240} />
+        </div>
+
+        <div className="absolute top-100 -right-20 opacity-60">
+          <Image src="/coracaofundo.png" alt="" width={240} height={240} />
+        </div>
+
+        <div className="absolute top-188 -left-20 opacity-60">
+          <Image src="/coracaofundo.png" alt="" width={240} height={240} />
+        </div>
+
+        <div className="absolute top-276 -right-20 opacity-60">
+          <Image src="/coracaofundo.png" alt="" width={240} height={240} />
+        </div>
+
+        <div className="absolute top-364 -left-20 opacity-60">
+          <Image src="/coracaofundo.png" alt="" width={240} height={240} />
+        </div>
+
+        <div className="absolute top-452 -right-20 opacity-60">
+          <Image src="/coracaofundo.png" alt="" width={240} height={240} />
+        </div>
+
+        <div className="absolute top-540 -left-20 opacity-60">
+          <Image src="/coracaofundo.png" alt="" width={240} height={240} />
+        </div>
+
+
       </div>
 
       {/* Container */}
@@ -57,5 +132,6 @@ export default async function Page({ params }: any) {
       </div>
 
     </main>
+
   );
 }
