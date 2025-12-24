@@ -156,7 +156,7 @@ export default function Template1({ letter, photos }: any) {
                     <div
                       key={i}
                       className="
-                      snap-center flex-shrink-0
+                      snap-center shrink-0
                       w-[70vw] sm:w-[260px]
                       bg-white border-8 border-red-300 shadow-lg
                       transform -rotate-2 hover:rotate-1 transition-transform
