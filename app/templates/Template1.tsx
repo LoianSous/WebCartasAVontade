@@ -200,7 +200,11 @@ export default function Template1({ letter, photos }: any) {
                   <p>
                     Data de aniversário:
                     <span className="text-red-700 ml-1">
-                      {new Date(letter.birthday).toLocaleDateString("pt-BR")}
+                      {letter.birthday
+                        .split("T")[0]      // pega só YYYY-MM-DD
+                        .split("-")
+                        .reverse()
+                        .join("/")}
                     </span>
                   </p>
                 )}
